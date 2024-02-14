@@ -8,13 +8,17 @@
 		TASK 4: Folosindu-ma de functiile de la task 1 si 3 am transformat un timestamp intr-o data completa
 		TASK 5: In acest task am convertit o data intr-un timestamp tinand cont de timezone
 		TASK 6: O functie de afisare a unei dati sub formatul zi,luna,an, ora:min:sec UTC+/-diferenta_timezone
-		
+  
+
+  
 					TASK 7 - 8: BASIC / COMPLEX NETWORK PACKING
 ---------------------------------------------------------------------------------------------------------------------------------
 
 	In aceste 2 task-uri am invatat cum se realizeaza memorarea datelor pe biti intr-un mod simplu, folosind primii 15 biti dintr-un unsigned int, dar si intr-un mod complex, memorand datele pe bitii unor unsigned int-uri intr-un mod continuu, fara sa pierdem vreun bit si pentru un plus de realism am folosit si conceptul unui control bit care ne spune care unsigned int-uri sunt corupte si care sunt bune.
 	TASK 7: Basic Network Packing, datele sunt stocate pe primii 15 biti ai unui unsigned int. In acest task, am scos datele, le-am sortat si le-am afisat.
 	TASK 8: Complex Network Packing, datele sunt stocate de-a lungul mai multor biti. Pentru realizarea acestui task am ales ideea de a creea un buffer care retine bitii care urmeza sa fie folositi pentru extragerea unei date, o variabila care tine minte cati biti am citit si cati mai sunt de citit. Pentru acel plus de realism, am tinut cont pentru fiecare data de unsigned int-ul in care se afla prin intermediul a 2 variabile, in acest mod am verificat si pentru datele care sunt in acelasi unsigned int dar si pentru datele care sunt distribuite pe 2 unsigned int-uri bit-ul de control. Dupa verificarea bitului de control, toate datele care nu erau "corupte" le-am adaugat intr-un vector pe care l-am sortat in oridine cronologica si dupa le-am afisat.
+ 
+ 
 	
 					TASK 9: MULTI - TIMEZONE EVENT PLANNER
 ---------------------------------------------------------------------------------------------------------------------------------
